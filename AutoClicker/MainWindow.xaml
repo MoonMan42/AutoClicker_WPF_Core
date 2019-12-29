@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AutoClicker"
         mc:Ignorable="d"
-        Title="AutoClicker" Height="275" Width="425"
+        Title="AutoClicker" Height="350" Width="450"
         FontSize="20">
     <Grid>
         <Grid.ColumnDefinitions>
@@ -25,7 +25,11 @@
         <Button x:Name="StartBtn" Content="Start" Margin="25" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4" Click="StartBtn_Clicked"/>
         <Button x:Name="StopBtn" Content="Stop" Margin="25" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="4" Click="StopBtn_Clicked"/>
 
-        
+        <Label Content="Number of clicks:" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+        <Label x:Name="clickCountLabel" Content="0" Grid.Column="2" Grid.Row="3" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <Button x:Name="ResetBtn" Content="Reset" Grid.Row="3" Grid.Column="4"  Margin="15" Click="ResetBtn_Click"/>
+
+
     </Grid>
 
 </Window>

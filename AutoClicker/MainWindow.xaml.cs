@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.VisualStudio.PlatformUI;
+using System;
 using System.Text.RegularExpressions;
 using System.Windows;
 using System.Windows.Input;
@@ -21,8 +22,7 @@ namespace AutoClicker
         {
             InitializeComponent();
 
-            dispatcherTimer.Tick += new EventHandler(TickEvent);
-            
+            dispatcherTimer.Tick += new EventHandler(TickEvent);      
 
             
         }
